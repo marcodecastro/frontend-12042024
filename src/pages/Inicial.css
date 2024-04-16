@@ -1,0 +1,78 @@
+.home-page {
+    width: 90%;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MuiTypography-root {
+    text-align: center;
+  }
+  
+  
+  
+  .title {
+    text-align: center;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease-in-out;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(1, 248, 22, 0.2);
+  }
+  
+  .card h4 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .card p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card button {
+    margin-top: 10px;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon svg {
+    color: #2196f3; /* Cor do ícone */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .icon svg:hover {
+    color: gold; /* Mudança de cor ao passar o mouse */
+  }
+  
+  @media (max-width: 600px) {
+    .home-page {
+      padding: 10px;
+    }
+  
+    .title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .card {
+      padding: 15px;
+    } 
+  }
+  
