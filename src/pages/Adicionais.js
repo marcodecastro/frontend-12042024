@@ -101,9 +101,24 @@ const Adicionais = ({ memberId, setMemberId }) => {
                 onChange={(e) => handleDegreeChange(index, 'degree', e.target.value)}
               >
                 <MenuItem value="">Selecione</MenuItem>
-                <MenuItem value="Aprendiz Maçom">Aprendiz Maçom</MenuItem>
-                <MenuItem value="Companheiro Maçom">Companheiro Maçom</MenuItem>
-                <MenuItem value="Mestre Maçom">Mestre Maçom</MenuItem>
+                <MenuItem value="Mestre Maçom da Marca">Mestre Maçom da Marca</MenuItem>
+                <MenuItem value="Nautas da Arca Real">Nautas da Arca Real</MenuItem>
+                <MenuItem value="Arco Real">Arco Real</MenuItem>
+                <MenuItem value="Cavaleiro Templário">Cavaleiro Templário</MenuItem>
+                <MenuItem value="Cavaleiro de Malta">Cavaleiro de Malta</MenuItem>
+                <MenuItem value="Cavaleiro de São João">Cavaleiro de São João</MenuItem>
+                <MenuItem value="Cavaleiro de São Paulo">Cavaleiro de São Paulo</MenuItem>
+                <MenuItem value="Cavaleiro de São Pedro">Cavaleiro de São Pedro</MenuItem>
+                <MenuItem value="Cavaleiro de São Tiago">Cavaleiro de São Tiago</MenuItem>
+                <MenuItem value="Cavaleiro de São João Evangelista">Cavaleiro de São João Evangelista</MenuItem>
+                <MenuItem value="Cavaleiro de São André">Cavaleiro de São André</MenuItem>
+                <MenuItem value="Cavaleiro de São Tomé">Cavaleiro de São Tomé</MenuItem>
+                <MenuItem value="Cavaleiro de São Felipe">Cavaleiro de São Felipe</MenuItem>
+                <MenuItem value="Cavaleiro de São Mateus">Cavaleiro de São Mateus</MenuItem>
+                <MenuItem value="Cavaleiro de São Bartolomeu">Cavaleiro de São Bartolomeu</MenuItem>
+                <MenuItem value="Cavaleiro de São Simão">Cavaleiro de São Simão</MenuItem>
+                <MenuItem value="Cavaleiro de São Judas Tadeu">Cavaleiro de São Judas Tadeu</MenuItem>
+                <MenuItem value="Cavaleiro de São Matias">Cavaleiro de São Matias</MenuItem>
               </Select>
             </FormControl>
           </div>

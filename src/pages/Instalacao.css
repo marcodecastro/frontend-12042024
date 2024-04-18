@@ -1,0 +1,101 @@
+.cadastro-instalacao {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c8cded;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .campo {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #007bff;
+  }
+  
+  textarea {
+    resize: vertical;
+    width: 75%;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .erros-validacao {
+    color: #ff0000;
+    margin-top: 10px;
+  }
+  
+  .status-envio {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Animações e efeitos visuais adicionais */
+  
+  .campo:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilos para responsividade */
+  
+  @media (max-width: 768px) {
+    .cadastro-instalacao {
+      padding: 10px;
+    }
+  
+    input,
+    textarea {
+      font-size: 15px;
+    }
+  }
