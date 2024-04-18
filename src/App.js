@@ -11,6 +11,10 @@ import Inicial from './pages/Inicial.js';
 import Simbolicos from './pages/Simbolicos.js';
 import Filosoficos from './pages/Filosoficos.js';
 import Adicionais from './pages/Adicionais.js';
+import Instalacao from './pages/Instalacao.js';
+import Reassuncao from './pages/Reassuncao.js';
+import Casamento from './pages/Casamento.js';
+
 
 
 const App = () => (
@@ -27,6 +31,9 @@ const App = () => (
         <Route path="/simbolicos" element={<Simbolicos />} />
         <Route path="/filosoficos" element={<Filosoficos />} /> 
         <Route path="/adicionais" element={<Adicionais />} />
+        <Route path="/instalacao" element={<Instalacao />} />
+        <Route path="/reassuncao" element={<Reassuncao />} />
+        <Route path="/casamento" element={<Casamento />} />
       </Routes>
     </AuthProvider>
   </BrowserRouter>

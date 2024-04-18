@@ -5,6 +5,7 @@ import lock from "../components/images/lock.png";
 import profile from "../components/images/icon.jpg";
 import '../components/Appe.css';
 import { AuthContext } from '../contexts/AuthContext.js';
+import './Login.css';
 
 
 const Login = () => {
