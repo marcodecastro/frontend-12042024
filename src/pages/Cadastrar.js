@@ -30,7 +30,7 @@ function Cadastrar() {
 
     try {
       // Enviar os dados ao backend
-      const response = await fetch('http://localhost:5000/cadastro', {
+      const response = await fetch('http://localhost:5005/cadastro', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -56,7 +56,7 @@ const Adicionais = ({ memberId, setMemberId }) => {
   
       const memberIdNumber = parseInt(memberId);
   
-      const response = await fetch('http://localhost:5000/api/grausadicionais', {
+      const response = await fetch('http://localhost:5005/api/grausadicionais', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

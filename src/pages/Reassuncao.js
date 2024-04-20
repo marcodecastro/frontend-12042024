@@ -32,10 +32,10 @@ function CadastroReassuncao() {
   
     try {
         // Verifica se o registro já existe
-        const existingRecord = await axios.get(`http://localhost:5000/api/reassuncao/${membroCim}`);
+        const existingRecord = await axios.get(`http://localhost:5005/api/reassuncao/${membroCim}`);
         
         // Se o registro existir, atualiza
-        const response = await axios.put(`http://localhost:5000/api/reassuncao/${membroCim}`, formData);
+        const response = await axios.put(`http://localhost:5005/api/reassuncao/${membroCim}`, formData);
         if (response.status === 200) {
           setSubmissionStatus('Sucesso! Reassuncao atualizada.');
           // Limpa o formulário após o sucesso
@@ -48,7 +48,7 @@ function CadastroReassuncao() {
       } catch (error) {
         if (error.response && error.response.status === 404) {
           // Se o registro não existir, cria um novo
-          const response = await axios.post('http://localhost:5000/api/reassuncao', formData);
+          const response = await axios.post('http://localhost:5005/api/reassuncao', formData);
           if (response.status === 201 || response.status === 200) {
             setSubmissionStatus('Sucesso! Reassuncao cadastrada.');
             // Limpa o formulário após o sucesso

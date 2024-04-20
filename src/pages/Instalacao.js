@@ -32,10 +32,10 @@ function CadastroInstalacao() {
   
     try {
       // Verifica se o registro já existe
-      const existingRecord = await axios.get(`http://localhost:5000/api/instalacao/${membroCim}`);
+      const existingRecord = await axios.get(`http://localhost:5005/api/instalacao/${membroCim}`);
       
       // Se o registro existir, atualiza
-      const response = await axios.put(`http://localhost:5000/api/instalacao/${membroCim}`, formData);
+      const response = await axios.put(`http://localhost:5005/api/instalacao/${membroCim}`, formData);
       if (response.status === 200) {
         setSubmissionStatus('Sucesso! Instalação atualizada.');
         // Limpa o formulário após o sucesso
@@ -48,7 +48,7 @@ function CadastroInstalacao() {
     } catch (error) {
       if (error.response && error.response.status === 404) {
         // Se o registro não existir, cria um novo
-        const response = await axios.post('http://localhost:5000/api/instalacao', formData);
+        const response = await axios.post('http://localhost:5005/api/instalacao', formData);
         if (response.status === 201 || response.status === 200) {
           setSubmissionStatus('Sucesso! Instalação cadastrada.');
           // Limpa o formulário após o sucesso

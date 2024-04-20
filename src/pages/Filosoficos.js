@@ -57,7 +57,7 @@ const Filosoficos = ({ memberId, setMemberId }) => {
   
       const memberIdNumber = parseInt(memberId);
   
-      const response = await fetch('http://localhost:5000/api/grausfilosoficos', {
+      const response = await fetch('http://localhost:5005/api/grausfilosoficos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

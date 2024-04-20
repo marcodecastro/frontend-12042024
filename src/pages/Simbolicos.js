@@ -56,7 +56,7 @@ const Simbolicos = ({ memberId, setMemberId }) => {
   
       const memberIdNumber = parseInt(memberId);
   
-      const response = await fetch('http://localhost:5000/api/graussimbolicos', {
+      const response = await fetch('http://localhost:5005/api/graussimbolicos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

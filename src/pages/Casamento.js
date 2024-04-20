@@ -31,11 +31,11 @@ function CadastroCasamento() {
 
     try {
       // Verifica se o registro já existe
-      const existingRecord = await axios.get(`http://localhost:5000/api/casamento/${membroCim}`);
+      const existingRecord = await axios.get(`http://localhost:5005/api/casamento/${membroCim}`);
 
       // Se o registro existir, atualiza
-      const response = existingRecord.data ? await axios.put(`http://localhost:5000/api/casamento/${membroCim}`, formData) :
-        await axios.post('http://localhost:5000/api/casamento', formData);
+      const response = existingRecord.data ? await axios.put(`http://localhost:5005/api/casamento/${membroCim}`, formData) :
+        await axios.post('http://localhost:5005/api/casamento', formData);
 
       if (response.status === 200 || response.status === 201) {
         setSubmissionStatus('Sucesso! Casamento ' + (existingRecord.data ? 'atualizado' : 'cadastrado') + '.');

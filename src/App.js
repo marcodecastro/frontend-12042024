@@ -15,7 +15,7 @@ import Instalacao from './pages/Instalacao.js';
 import Reassuncao from './pages/Reassuncao.js';
 import Casamento from './pages/Casamento.js';
 
-
+const baseURL = 'https://backend-12042024.vercel.app/';
 
 const App = () => (
   <BrowserRouter>
